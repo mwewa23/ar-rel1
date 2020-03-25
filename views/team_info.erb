@@ -1,0 +1,18 @@
+<html>
+<p><strong>Team: </strong><%= @team.name %></p>
+
+<p><strong>Team ID: </strong><%= @team.id %></p>
+
+<p><strong>Team Notes: </strong> <%= @team.notes %></p>
+<ol>
+    <% @players.each do |player| %>
+      <li><%= player.name %></li>
+    <% end %>
+</ol>
+
+
+
+
+<br>
+<p>You can also see a full list of Players <a href="/user_list">here</a>. </p>
+</html>

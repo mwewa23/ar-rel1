@@ -1,0 +1,35 @@
+<html>
+<style>
+    table {
+        font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+    }
+    td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+    
+</style>    
+
+<h2>Teams</h2>
+
+<table>
+<tr>
+    <th>Team Name</th>
+    <th>Team ID</th>
+    <th>Team Notes</th>
+  </tr>   
+  
+    <% @teams.each do |team| %>
+    <tr>
+            <td><%= team.name %></td>
+            <td><%= team.id %></td>
+            <td><%= team.notes %></td>
+    </tr>    
+    <% end %>
+</table>
+
+<p><a href="/team">Find all players on a Team</a></p>
+</html>

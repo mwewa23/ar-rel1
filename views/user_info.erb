@@ -1,0 +1,10 @@
+<html>
+<p><%= @user.name %> belongs to the <%= @user.team.name %> team!</p>
+<p>Their player id is <%= @user.id.to_s %> and email is <%= @user.email %>.</p>
+<br>
+
+<p>Find all players on the <%= @user.team.name =%> Team <a href="/team">here</a>!</p>
+
+
+<p>You can also see a full list of Players <a href="/user_list">here</a>. </p>
+</html>
